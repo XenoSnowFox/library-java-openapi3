@@ -1,6 +1,6 @@
 # OpenAPI v3 Java Library
 
-Support library for working with the [OpenAPI v3 Specification](https://swagger.io/specification)
+Support library for working with the [OpenAPI v3 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md)
 
 [![License](https://img.shields.io/github/license/xenosnowfox/library-java-amazonaws-lambda.svg)](https://opensource.org/licenses/MIT)
 
