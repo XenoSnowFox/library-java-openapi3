@@ -37,7 +37,7 @@ public class InfoImpl implements Info {
 
     @Override
     public void setTitle(String title) {
-        if (title == null || title.isBlank()) {
+        if (title == null || title.trim().isEmpty()) {
             throw new NullPointerException("Title cannot be null or blank");
         }
         this.title = title;
@@ -50,7 +50,7 @@ public class InfoImpl implements Info {
 
     @Override
     public void setVersion(String version) {
-        if (version == null || version.isBlank()) {
+        if (version == null || version.trim().isEmpty()) {
             throw new NullPointerException("Version cannot be null or blank");
         }
         this.version = version;

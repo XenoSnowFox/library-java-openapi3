@@ -103,7 +103,7 @@ public interface License extends Jsonable {
 
         // add name
         String name = this.getName();
-        if (name == null || name.isBlank()) {
+        if (name == null || name.trim().isEmpty()) {
             throw new NullPointerException("Name has not been defined");
         }
         jsonObject.putOpt("name", name);

@@ -374,14 +374,14 @@ public interface Info extends Jsonable {
 
         // add title
         String title = this.getTitle();
-        if (title == null || title.isBlank()) {
+        if (title == null || title.trim().isEmpty()) {
             throw new NullPointerException("Title has not been defined");
         }
         jsonObject.putOpt("title", title);
 
         // add version
         String version = this.getVersion();
-        if (version == null || version.isBlank()) {
+        if (version == null || version.trim().isEmpty()) {
             throw new NullPointerException("Version has not been defined");
         }
         jsonObject.putOpt("version", version);
